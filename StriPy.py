@@ -11,7 +11,7 @@ item = []
 
 
 def main():
-    open("Menu.txt", "r").read()
+     print (colored( str(open("Menu.txt", "r").read()), "red")   )  
 ######
     start = time.perf_counter()
     parse = optparse.OptionParser("Usage: StriPy -i <input>")
