@@ -9,8 +9,8 @@ item = []
 
 def main():
 
-    global outPut, safety, threadCountG
-    safety = 50
+    global outPut, threadCountG
+   
     print (colored( str(open("Menu.txt", "r").read()), "red")   )
 ######
     start = time.perf_counter()
@@ -58,20 +58,19 @@ def makeList(inp):
 
 ## Makes the thread count so that it doesn't make to many.
 def saftyCheck():
+    safety = len(item)
     if (threadCountG != None):
         safety = threadCountG 
-        return  threadCountG
+        return  safety
+    elif  (500 < safety):
+        safety = 500
+        return safety 
     else:
-        safety = len(item)
-        if  (500 < safety):
-            safety = 500
-            return safety 
         return safety
     
 
 ## Creates threads that will do the processing.
 def threads(count):
-    saftyCheck()
     while count != len(item):
         thred = []
         i = 0    
@@ -118,4 +117,3 @@ def hostResolve(count2):
 
 if __name__ == "__main__":
     main()
-
