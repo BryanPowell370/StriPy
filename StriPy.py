@@ -72,9 +72,7 @@ def hostResolve(count2):
             r = http.request('GET', "https://" + item[count2], timeout=3).status   
             s = http.request('GET', "http://" + item[count2], timeout=3).status   
             if(r == 200):
-             
-              print(colored(f"[*] https://{item[count2]} [{r}]", "green")  )
-              print(f"Inprogress ",end="\r")    
+              print(colored(f"[*] https://{item[count2]} [{r}]", "green")  )   
               open(outPut, 'a').write(f"https://{item[count2]}  [{r}]\n")
               
             if(s == 200):
@@ -84,7 +82,8 @@ def hostResolve(count2):
             else:
                 print(colored(f"[!!]Removed Page Bad [{r}]", "red")  )
                 r.close()
-                #print(r.status)
+           
+            print(f"Inprogress ",end="\r") 
         except:
            pass
 
