@@ -1,5 +1,5 @@
 # StriPy
-StriPy is a program that takes a list of domains then checks to see if the domains are good and has a response code of [200]. Then adds the https:// to the beginning of the text. Then saves it.
+StriPy is a program that takes a list of domains then checks to see if the domains are good and has a response code of [200]. Then adds the https:// and http:// to the beginning of the text. Then saves it.
 
 ## Requirements
 ```
