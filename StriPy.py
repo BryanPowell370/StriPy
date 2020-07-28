@@ -15,7 +15,7 @@ def main():
     print (colored( str(open("Menu.txt", "r").read()), "red")   )
 ######
     start = time.perf_counter()
-    parse = optparse.OptionParser("Usage: StriPy -i <input>")
+    parse = optparse.OptionParser("Usage: StriPy -i <input> -o <output>\nUsage: cat text.txt | StriPy -o <output>\nUsage: Any Output | StriPy -o <output>")
     parse.add_option('-i',     dest='inp', type='string',       help='Target URL')
     parse.add_option('-o',     dest='out', type='string',       help='Target URL')
     (options, args) = parse.parse_args()
