@@ -13,7 +13,7 @@ pip install termcolor
 
 ## Install
 ``` git clone install  https://github.com/LaphingMan/StriPy.git ```
-
+## Contributions
 
 ## [Donations](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KSYCHAFWKZQXU&item_name=To+support+development+of+this+program.&currency_code=USD&source=url) - click to support
 Donations are appreciated to support future versions of our product.
